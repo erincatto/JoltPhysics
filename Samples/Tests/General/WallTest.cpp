@@ -19,7 +19,8 @@ void WallTest::Initialize()
 	// Floor
 	CreateFloor();
 
-	RefConst<Shape> box_shape = new BoxShape(Vec3(1.0f, 1.0f, 1.0f));
+	float radius = 0.2f;
+	RefConst<Shape> box_shape = new BoxShape(Vec3(1.0f, 1.0f, 1.0f), radius);
 
 	// Wall
 	for (int i = 0; i < 10; ++i)
