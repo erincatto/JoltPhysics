@@ -86,7 +86,7 @@ private:
 	void					ValidateState(StateRecorderImpl &inExpectedState);
 
 	// Global settings
-	int						mMaxConcurrentJobs = thread::hardware_concurrency();		// How many jobs to run in parallel
+	int						mMaxConcurrentJobs = 1; //thread::hardware_concurrency();		// How many jobs to run in parallel
 	float					mUpdateFrequency = 60.0f;									// Physics update frequency
 	int						mCollisionSteps = 1;										// How many collision detection steps per physics update
 	int						mIntegrationSubSteps = 1;									// How many integration steps per physics update
